@@ -27,5 +27,5 @@ def criar_usuario(request):
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
-def read(request):
+def logar_usuario(request):
     return Response({"Mensagem":"Olá, Usuário!"}, status=status.HTTP_200_OK)
